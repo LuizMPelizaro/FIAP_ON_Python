@@ -7,6 +7,7 @@ def total_voos_2014(arquivo: str) -> int:
 
 
 def mes_ano_ocorreu_maior_transito_aerio(arquivo: str) -> str:
+    """ Função que procura o mes e o ano que ocorreu a maior taxa de transito aério"""
     with open(arquivo, "r") as boston:
         total: int = 0
         for linha in boston.readlines()[1:-1]:
@@ -35,6 +36,7 @@ def numero_passageiros(arquivo: str, ano: int) -> str:
 
 
 def maior_media_valor_hotel(arquivo: str, ano: int) -> str:
+    """Mostra a maior media de tarifa de hotel naquele ano"""
     maior_media: float = 0
     with open(arquivo, 'r') as boston:
         for linha in boston.readlines()[1:-1]:
@@ -51,6 +53,7 @@ def maior_media_valor_hotel(arquivo: str, ano: int) -> str:
 
 
 def checa_ano(arquivo: str, ano: int) -> bool:
+    """Classe que checa se o ano existe na base da dados"""
     with open(arquivo, 'r') as boston:
         for linha in boston.readlines()[1:-1]:
             ano_dataset: int = int(linha.split(',')[0])
