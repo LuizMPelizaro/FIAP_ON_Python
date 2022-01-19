@@ -1,6 +1,6 @@
 nome: str = input("Digite o nome do paciente : ")
 idade: int = int(input("Digite a idade do paciente : "))
-doenca_ifectocontagiosa: bool = input("O paciente tem suspeita de doença contagiosa : ").upper()
+doenca_ifectocontagiosa: str = input("O paciente tem suspeita de doença contagiosa : ").upper()
 sexo: str = input("Digite seu sexo : ")
 
 if doenca_ifectocontagiosa == 'SIM':
@@ -10,7 +10,7 @@ elif doenca_ifectocontagiosa == 'NAO':
 else:
     print('Responda se há suspeita de doença contagiosa')
 
-if idade >=65:
+if idade >= 65:
     print('PACIENTE COM PRIORIDADE')
 else:
     if sexo == 'feminino' and idade > 10:

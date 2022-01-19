@@ -5,12 +5,12 @@ usuarios: dict = {1: ["Chaves Silva", "17/06/1975", "Recep_01", 100.00],
 usuarios["Florinda"] = ["Florinda Flores", "26/11/2017", "Recep_01", 100.00]
 usuarios["Florinda"] = ["Florinda Flores", "27/11/2017", "Recep_01", 100.00]
 
-# print(usuarios)
+print(len(usuarios))
 # print("###########=========###########")
 # print(f'Dados: {usuarios.get("Chaves")}')
 
 # usuarios["Chaves"][3] *= 3
-# print(usuarios["Chaves"])
+#print(usuarios["Chaves"])
 
 
 lista_usuarios: list[dict] = [usuarios]
