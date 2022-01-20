@@ -1,5 +1,5 @@
-def world_cup_titles(country, *args) -> None:
-    """Imprime o pais e os anos o qual elke foi campeão de copa do mundo"""
+def world_cup_titles(country: str, *args) -> None:
+    """Imprime o pais e os anos o qual ele foi campeão de copa do mundo"""
     print(f'Country: {country}')
 
     for title in args:
