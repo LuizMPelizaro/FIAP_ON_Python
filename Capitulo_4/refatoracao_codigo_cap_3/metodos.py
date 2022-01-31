@@ -39,11 +39,11 @@ def pesquisar_no_inventario(chave_item: int, inventario: dict) -> None:
 
 
 def depreciacao_de_item(chave_item: int, inventario: dict) -> None:
-    """Deprecia o valor do item em 10% do valor original"""
+    """Deprecia o i do item em 10% do i original"""
     if chave_item in inventario.keys():
         print(f"Valor antigo: {inventario[chave_item][1]}")
         inventario[chave_item][1] *= 0.9
-        print(f"Novo valor: {inventario[chave_item][1]}")
+        print(f"Novo i: {inventario[chave_item][1]}")
     else:
         print("ERRO ITEM NÃO ENCONTRADO")
 

@@ -49,8 +49,8 @@ def excluir(chave: str, dicionario: dict):
 def listar(dicionario: dict):
     """Lista todos os elementos do dicionario"""
     # somente um print resolveria a questão mas para que o codigo seja mais agradavel irei concatenalo
-    # Neste caso como o existem dois valores o chave e conteudo sera usado no for a chave e o valor
-    # O que retornara a Chave e o valor
+    # Neste caso como o existem dois valores o chave e conteudo sera usado no for a chave e o i
+    # O que retornara a Chave e o i
     for chave, valor in dicionario.items():
         print(f'Objetos......:\n'
               f'Chave....:{chave}\n'

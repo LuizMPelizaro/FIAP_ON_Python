@@ -5,7 +5,7 @@ def gerador(tamanho_lista: int, ) -> list[int]:
     x = 0
     lista: list[int] = []
     while x < tamanho_lista:
-        valor = randrange(10)
+        valor = randrange(50)
         lista.append(valor)
         x += 1
     return lista
